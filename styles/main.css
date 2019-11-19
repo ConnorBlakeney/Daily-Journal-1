@@ -1,0 +1,32 @@
+h1{
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  text-align: center;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  font-family: Impact;
+  background-image: url(kgatlw.png);
+  background-position: center;
+}
+
+body{
+  background: radial-gradient(green, red);
+}
+
+label{
+  font-size: 20px;
+  color: chartreuse;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+.journalItems{
+  display: flex;
+  border-radius: 10px;
+  border: 2px ridge white;
+}
+
+.fields{
+  border-radius: 30px;
+  text-align: center;
+}
