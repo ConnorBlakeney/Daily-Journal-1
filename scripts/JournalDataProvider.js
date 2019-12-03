@@ -16,7 +16,14 @@ const journal = [
       mood: "Ok"
   },
   {
-      id: 1,
+      id: 2,
+      date: "11/22/2019",
+      concept: "Javascript and automating",
+      entry: "We discussed how we can automate HTML, and automate event listeners",
+      mood: "sallright"
+  },
+  {
+      id: 3,
       date: "11/22/2019",
       concept: "Javascript and automating",
       entry: "We discussed how we can automate HTML, and automate event listeners",

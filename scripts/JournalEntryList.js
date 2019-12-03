@@ -20,10 +20,10 @@ const EntryListComponent = () => {
       (currentEntry) => {
         return JournalEntryComponent(currentEntry)
       }
-    )
+    ).join(" ")
     }
       </section>
-  `
+  ` 
 
 }
 export default EntryListComponent

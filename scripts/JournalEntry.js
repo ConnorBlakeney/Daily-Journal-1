@@ -5,7 +5,7 @@
 const JournalEntryComponent = (entry) => {
   return `
       <section id="entry--${entry.id}" class="journalEntry">
-          <div>Date: ${entry.date}</div>
+              <div>Date: ${entry.date}</div>
               <div class="concept">Concept: ${entry.concept}</div>
               <div>Entry: ${entry.entry}</div>
               <div>Mood: ${entry.mood}</div>
