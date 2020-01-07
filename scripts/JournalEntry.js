@@ -4,13 +4,30 @@
  */
 const JournalEntryComponent = (entry) => {
   return `
-      <section id="entry--${entry.id}" class="journalEntry">
-              <div>Date: ${entry.date}</div>
+      <section class="entry__card">
+              <div class="date">Date: ${entry.date}</div>
               <div class="concept">Concept: ${entry.concept}</div>
-              <div>Entry: ${entry.entry}</div>
-              <div>Mood: ${entry.mood}</div>
-      </section>
+              <div class="entry">Entry: ${entry.entry}</div>
+              <div class="mood">Mood: ${entry.mood}</div>
+              <button class="deleteButton" id="deleteNote--${entry.id}">Delete</button>
+              <button class="editButton" id="editNote--${entry.id}">Edit</button>
+              <dialog  id="details--${entry.id}" class="editDialog">
+              <input type="hidden" class="hiddenId" id="entry-id"/>
+              <input type="date" id="editDate--${entry.id}">
+              <input type="text" id= "editConcept--${entry.id}" >
+              <textarea id="editEntry--${entry.id}"></textarea>
+              <select name="mood" id="editMood--${entry.id}">
+                <option>Randy Jackson Hot, baby</option>
+                 <option>Bout it</option>
+                  <option>Sallright</option>
+                  <option>Naw dog, naw</option>
+                  <option>Weak man, weak</option>
+                  <option value="none" selected disabled hidden>How're you feeling?</option>
+              </select>
+              <button class="button--close" id="saveEdit--${entry.id}">Save</button>
+              </dialog>
+              </section>
   `
-}
+} 
 
 export default JournalEntryComponent

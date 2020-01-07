@@ -1,45 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>DAILY JOURNAL</title>
   <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
-  <h1>Daily Journal</h1>
-  <form action="">
-    <fieldset class="journalItems">
-      <label for="journalDate">Date of Entry</label>
-      <input type="date" name="journalDate" id="journalDate" class="fields">
-    </fieldset>
-    <fieldset class="journalItems">
-      <label for="conceptsCovered">Concepts Covered</label>
-      <input type="text" name="conceptsCovered" id="conceptsCovered" class="fields" placeholder="What did you learn?">
-    </fieldset>
-    <fieldset class="journalItems">
-      <label for="journalEntry">Journal Entry</label>
-      <textarea name="journalEntry" id="journalEntry" cols="20" rows="2" placeholder="How's it going?"
-        class="fields"></textarea>
-    </fieldset>
-    <fieldset class="journalItems">
-      <label for="mood">Mood for the day</label>
-      <select name="mood" id="mood" class="fields">
-        <option value="randyJ">Randy Jackson Hot, baby</option>
-        <option value="BoutIt">Bout it</option>
-        <option value="sallright">Sallright</option>
-        <option value="naw">Naw dog, naw</option>
-        <option value="weak">Weak man, weak</option>
-        <option value="none" selected disabled hidden>How're you feeling?</option>
-      </select>
-    </fieldset>
-    <button class="fields">Record Journal Entry</button>
-  </form>
-  <section class="entryLog"></section>
+  <main class="container"></main>
   <script type="module" src="./scripts/main.js"></script>
 </body>
-
 </html>

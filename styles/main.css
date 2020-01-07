@@ -23,7 +23,7 @@ label{
 .journalItems{
   display: flex;
   border-radius: 10px;
-  border: 2px ridge white;
+  border: 2px ridge yellow;
 }
 
 .fields{
@@ -38,4 +38,18 @@ label{
 
 .concept{
   font-size: 20px;
+}
+
+.entryList{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.entry__card{
+  border: 2px solid yellow;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  padding: 10px;
 }
