@@ -24,7 +24,6 @@ const eventHub = document.querySelector(".container")
   eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("saveEdit")) {
       const [prefix, id] = clickEvent.target.id.split("--")
-      console.log("test", id  )
       const editedEntry = {
         id: parseInt(document.querySelector("#entry-id").value, 10),
         concept: document.querySelector(`#editConcept--${id}`).value,

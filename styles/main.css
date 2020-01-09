@@ -1,3 +1,5 @@
+@import 'edit.css';
+
 h1{
   font-size: 50px;
   color: black;
@@ -15,6 +17,12 @@ body{
 }
 
 label{
+  font-size: 20px;
+  color: chartreuse;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+.filterLabel{
+
   font-size: 20px;
   color: chartreuse;
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
@@ -52,4 +60,6 @@ label{
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   padding: 10px;
+  background-color: gainsboro;
+  margin: 10px;;
 }
