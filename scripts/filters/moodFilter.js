@@ -12,6 +12,7 @@ export const moodFilter = () => {
                 return entry
             }
         })
+        content.classList.remove("emptyLog")
         render(matchingEntries)
     })
 

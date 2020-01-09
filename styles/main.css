@@ -21,6 +21,17 @@ label{
   color: chartreuse;
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
+
+.filters{
+  font-size: 20px;
+  color: chartreuse;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  border-radius: 10px;
+  border: 2px ridge yellow;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 .filterLabel{
 
   font-size: 20px;
@@ -34,10 +45,13 @@ label{
   border: 2px ridge yellow;
 }
 
-.fields{
+button{
+  background-color: chartreuse;
   border-radius: 30px;
   text-align: center;
 }
+
+
 .journalEntry{
   border: 2px ridge white;
   text-align: center;
@@ -46,6 +60,7 @@ label{
 
 .concept{
   font-size: 20px;
+  
 }
 
 .entryList{
@@ -62,4 +77,31 @@ label{
   padding: 10px;
   background-color: gainsboro;
   margin: 10px;;
+}
+
+#conceptcolor, #dateColor{
+  background-color: yellow;
+}
+.fields{
+background-color: yellow;
+}
+
+.searchFilter{
+  padding-right: 50px;
+}
+
+#searchField{
+  background-color: yellow;
+}
+
+.emptyLog{
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  text-align: center;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  font-family: Impact;
+  background-image: url(kgatlw.png);
+  background-position: center;
 }

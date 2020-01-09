@@ -28,6 +28,7 @@ const EntryListComponent = () => {
             getEntries().then(
               () => {
                 let recordedEntries = useJournalEntries()
+                content.classList.remove("emptyLog")
                 render(recordedEntries)
               }
             )
@@ -72,6 +73,7 @@ eventHub.addEventListener("click", clickEvent => {
 //renders Udated entries on save
 eventHub.addEventListener("entryEdited", event => {
   const updatedEntries = useJournalEntries()
+  content.classList.remove("emptyLog")
   render(updatedEntries)
 })
 
@@ -99,6 +101,7 @@ eventHub.addEventListener("click", theEvent => {
             getEntries().then(
                 () => {
                   let entries = useJournalEntries()
+                  content.classList.remove("emptyLog")
                   render(entries)
                 }
               )}
@@ -109,6 +112,23 @@ eventHub.addEventListener("click", theEvent => {
     }
     })
 
+    //Searches by key press
+    eventHub.addEventListener("searchInitiated", event => {
+      const searchTerm = event.detail.search
+       const entries = useJournalEntries()
+       const matchingEntries = entries.filter(entry => {
+         if (entry.concept.includes(searchTerm) || entry.entry.includes(searchTerm)) {
+           return entry
+         }
+       })
+       if (matchingEntries.length > 0) {
+        content.classList.remove("emptyLog")
+         render(matchingEntries)
+       } else {
+         content.classList.add("emptyLog")
+         content.innerHTML = "Your Search Found Nothing"
+       }
+    })
       
   const render = (entries) => {
     content.innerHTML = `
