@@ -1,39 +1,60 @@
 {
   "entries": [
     {
-      "id": 9,
-      "concept": "def",
-      "entry": "WORKING",
-      "mood": "Weak man, weak",
-      "date": "2020-02-01"
+      "date": "2020-01-08",
+      "concept": "CRUD",
+      "entry": "I finally have CRUD functionality!!",
+      "mood": "Bout it",
+      "id": 1
     },
     {
-      "id": 10,
-      "concept": "update",
-      "entry": "yo",
+      "id": 2,
+      "concept": "ERD",
+      "entry": "ERD's aren't so bad!!!!",
       "mood": "Randy Jackson Hot, baby",
-      "date": "2020-01-04"
-    },
-    {
-      "id": 11,
-      "concept": "updat",
-      "entry": "NEw",
-      "mood": "Sallright",
-      "date": "2020-01-29"
-    },
-    {
-      "id": 12,
-      "concept": "textBox",
-      "entry": "I learned lots about about this and that and the other thigasdfjasdf;asdfkasdfasdfasdfasdfds",
-      "mood": "Randy Jackson Hot, baby",
-      "date": "2020-01-07"
+      "date": "2020-01-08"
     },
     {
       "date": "2020-01-08",
-      "concept": "wed",
-      "entry": "dfasd",
-      "mood": "Randy Jackson Hot, baby",
-      "id": 13
+      "concept": "test",
+      "entry": "test",
+      "mood": "Bout it",
+      "id": 3
+    },
+    {
+      "date": "2020-01-13",
+      "concept": "d",
+      "entry": "d",
+      "mood": "Sallright",
+      "id": 4
+    },
+    {
+      "date": "2020-01-14",
+      "concept": "d",
+      "entry": "d",
+      "mood": "Naw dog, naw",
+      "id": 5
+    },
+    {
+      "date": "2020-01-14",
+      "concept": "d",
+      "entry": "d",
+      "mood": "Naw dog, naw",
+      "id": 6
+    },
+    {
+      "date": "2020-01-15",
+      "concept": "d",
+      "entry": "d",
+      "mood": "Weak man, weak",
+      "id": 7
+    },
+    {
+      "date": "2020-01-06",
+      "concept": "yes",
+      "entry": "yes",
+      "mood": "RJH",
+      "id": 8
     }
   ]
 }

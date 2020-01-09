@@ -5,14 +5,13 @@ import JournalEntryComponent from "./JournalEntry.js"
 const eventHub = document.querySelector(".container")
 
 const EntryListComponent = () => {
-  const entries = useJournalEntries()
   const content = document.querySelector(".entryLog")
     eventHub.addEventListener("click", clickEvent => {  
       if (clickEvent.target.id === "record") {
         let date = document.querySelector(".journalDate").value
         let concept = document.querySelector(".conceptsCovered").value
         let entry = document.querySelector("#journalEntry").value
-        let mood = document.querySelector("#mood").value
+        let mood = document.querySelector("#moods").value
         if(entry === "" || date === "" || concept ==="" || mood ==="none"){
           alert("Please fill out all Fields")
         } 
@@ -24,11 +23,22 @@ const EntryListComponent = () => {
           entry: entry,
           mood: mood
         }
-        saveEntry(newEntry) 
+        saveEntry(newEntry) .then(
+          () => {
+            getEntries().then(
+              () => {
+                let recordedEntries = useJournalEntries()
+                content.classList.remove("emptyLog")
+                render(recordedEntries)
+              }
+            )
+          }
+        )
         document.querySelector(".journalDate").value = ""
         document.querySelector(".conceptsCovered").value = ""
         document.querySelector("#journalEntry").value = ""
-        document.querySelector("#mood").value = ""
+        document.querySelector("#moods").value = ""
+       
       }   
         }
 
@@ -48,7 +58,6 @@ eventHub.addEventListener("click", clickEvent => {
 
   //edit button
   if (clickEvent.target.id.startsWith("editNote--")) {
-    console.log("edit has been clicked")
         const [prefix, id] = clickEvent.target.id.split("--")
         const editEvent = new CustomEvent("editButtonClicked", {
           detail: {
@@ -61,11 +70,15 @@ eventHub.addEventListener("click", clickEvent => {
 
 })
 
+//renders Udated entries on save
 eventHub.addEventListener("entryEdited", event => {
   const updatedEntries = useJournalEntries()
+  content.classList.remove("emptyLog")
   render(updatedEntries)
 })
 
+
+//Opens Edit Button Dialog
 eventHub.addEventListener("click", theEvent => {
   if (theEvent.target.id.startsWith("editNote--")) {
     const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
@@ -88,6 +101,7 @@ eventHub.addEventListener("click", theEvent => {
             getEntries().then(
                 () => {
                   let entries = useJournalEntries()
+                  content.classList.remove("emptyLog")
                   render(entries)
                 }
               )}
@@ -98,6 +112,23 @@ eventHub.addEventListener("click", theEvent => {
     }
     })
 
+    //Searches by key press
+    eventHub.addEventListener("searchInitiated", event => {
+      const searchTerm = event.detail.search
+       const entries = useJournalEntries()
+       const matchingEntries = entries.filter(entry => {
+         if (entry.concept.includes(searchTerm) || entry.entry.includes(searchTerm)) {
+           return entry
+         }
+       })
+       if (matchingEntries.length > 0) {
+        content.classList.remove("emptyLog")
+         render(matchingEntries)
+       } else {
+         content.classList.add("emptyLog")
+         content.innerHTML = "Your Search Found Nothing"
+       }
+    })
       
   const render = (entries) => {
     content.innerHTML = `

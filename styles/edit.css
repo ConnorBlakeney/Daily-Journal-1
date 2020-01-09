@@ -1,0 +1,9 @@
+.edit__Card{
+  display: flex;
+  flex-direction: column; 
+}
+
+.edate, .econcept, .eentry, .emood{
+  padding: 5px;
+  margin: 10px;
+}

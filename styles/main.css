@@ -1,3 +1,5 @@
+@import 'edit.css';
+
 h1{
   font-size: 50px;
   color: black;
@@ -20,16 +22,36 @@ label{
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
 
+.filters{
+  font-size: 20px;
+  color: chartreuse;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  border-radius: 10px;
+  border: 2px ridge yellow;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.filterLabel{
+
+  font-size: 20px;
+  color: chartreuse;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
 .journalItems{
   display: flex;
   border-radius: 10px;
   border: 2px ridge yellow;
 }
 
-.fields{
+button{
+  background-color: chartreuse;
   border-radius: 30px;
   text-align: center;
 }
+
+
 .journalEntry{
   border: 2px ridge white;
   text-align: center;
@@ -38,6 +60,7 @@ label{
 
 .concept{
   font-size: 20px;
+  
 }
 
 .entryList{
@@ -52,4 +75,33 @@ label{
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   padding: 10px;
+  background-color: gainsboro;
+  margin: 10px;;
+}
+
+#conceptcolor, #dateColor{
+  background-color: yellow;
+}
+.fields{
+background-color: yellow;
+}
+
+.searchFilter{
+  padding-right: 50px;
+}
+
+#searchField{
+  background-color: yellow;
+}
+
+.emptyLog{
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  text-align: center;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  font-family: Impact;
+  background-image: url(kgatlw.png);
+  background-position: center;
 }
