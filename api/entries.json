@@ -1,60 +1,25 @@
 {
   "entries": [
     {
-      "date": "2020-01-08",
-      "concept": "CRUD",
-      "entry": "I finally have CRUD functionality!!",
-      "mood": "Bout it",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "concept": "ERD",
-      "entry": "ERD's aren't so bad!!!!",
-      "mood": "Randy Jackson Hot, baby",
-      "date": "2020-01-08"
-    },
-    {
-      "date": "2020-01-08",
-      "concept": "test",
-      "entry": "test",
+      "date": "2020-01-26",
+      "concept": "NEW ENTRY",
+      "entry": "TEST",
       "mood": "Bout it",
       "id": 3
     },
     {
-      "date": "2020-01-13",
-      "concept": "d",
-      "entry": "d",
-      "mood": "Sallright",
+      "date": "2020-01-14",
+      "concept": "test",
+      "entry": "test",
+      "mood": "Bout it",
       "id": 4
     },
     {
-      "date": "2020-01-14",
-      "concept": "d",
-      "entry": "d",
-      "mood": "Naw dog, naw",
-      "id": 5
-    },
-    {
-      "date": "2020-01-14",
-      "concept": "d",
-      "entry": "d",
-      "mood": "Naw dog, naw",
-      "id": 6
-    },
-    {
-      "date": "2020-01-15",
-      "concept": "d",
-      "entry": "d",
-      "mood": "Weak man, weak",
-      "id": 7
-    },
-    {
-      "date": "2020-01-06",
-      "concept": "yes",
-      "entry": "yes",
+      "date": "2020-01-16",
+      "concept": "TEST",
+      "entry": "Test",
       "mood": "RJH",
-      "id": 8
+      "id": 5
     }
   ]
 }

@@ -117,7 +117,7 @@ eventHub.addEventListener("click", theEvent => {
       const searchTerm = event.detail.search
        const entries = useJournalEntries()
        const matchingEntries = entries.filter(entry => {
-         if (entry.concept.includes(searchTerm) || entry.entry.includes(searchTerm)) {
+         if (entry.concept.includes(searchTerm.toUpperCase()) || entry.entry.includes(searchTerm.toUpperCase())) {
            return entry
          }
        })
